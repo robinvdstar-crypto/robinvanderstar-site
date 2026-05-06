@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /
+
+# Later aanpassen naar:
+# User-agent: *
+# Allow: /
