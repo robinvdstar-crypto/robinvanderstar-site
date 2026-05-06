@@ -1,6 +1,6 @@
 # robinvanderstar-site
 
-Professionele persoonlijke profielsite voor Robin van der Star. De site presenteert ervaring, projecten, skills, cases en contactgegevens in een moderne professionele hub, zonder klassieke cv-uitstraling.
+Professionele persoonlijke profielsite van Robin van der Star. De site is bedoeld als moderne persoonlijke hub voor ervaring, projecten, skills, cases en contact.
 
 ## Techniek
 
@@ -8,37 +8,29 @@ Professionele persoonlijke profielsite voor Robin van der Star. De site presente
 - CSS
 - JavaScript
 
-De website is een volledig statische HTML/CSS/JS-site. Er is geen buildproces nodig en er worden geen externe libraries of framework-builds gebruikt.
+De website is volledig statisch. Er is geen buildproces nodig.
 
-## Lokaal bekijken
+## Deployment
 
-Open `index.html` direct in de browser, of gebruik een lokale Live Server-extensie in je editor.
-
-## Deployment via Cloudflare Pages
-
-Gebruik Cloudflare Pages als voorkeursroute voor deployment vanuit GitHub.
+- Platform: Cloudflare Pages
+- GitHub repo: https://github.com/robinvdstar-crypto/robinvanderstar-site
+- Production branch: main
 
 Cloudflare Pages instellingen:
 
-- Platform: Cloudflare Pages
-- Git provider: GitHub
-- Repository: robinvanderstar-site
-- Production branch: main
 - Framework preset: None
 - Build command: leeg laten
 - Build output directory: /
-- Environment variables: geen
+- Production branch: main
 
-Elke push naar `main` moet automatisch een nieuwe Cloudflare Pages-deploy triggeren. De tijdelijke live URL wordt door Cloudflare Pages aangemaakt, bijvoorbeeld `robinvanderstar-site.pages.dev`.
-
-De huidige Cloudflare Workers-deploy mag voorlopig blijven bestaan, maar is niet de voorkeursroute voor deze statische website.
+Elke push naar `main` kan automatisch een nieuwe Cloudflare Pages-deploy triggeren.
 
 ## Indexering
 
-De site bevat tijdelijk `noindex, nofollow` in `index.html` en blokkeert crawlers via `robots.txt`, omdat de site nog in opbouw is.
+`noindex, nofollow` staat tijdelijk actief in `index.html`. Ook blokkeert `robots.txt` crawlers voorlopig met `Disallow: /`.
 
-Verwijder dit pas zodra `robinvanderstar.nl` definitief live mag en geïndexeerd mag worden.
+Verwijder dit pas zodra `robinvanderstar.nl` definitief gekoppeld is en de site geindexeerd mag worden.
 
-## Sitemap
+## Domein
 
-`sitemap.xml` verwijst voorlopig naar `https://robinvanderstar.nl/`. Deze sitemap klopt pas definitief zodra het eigen domein `robinvanderstar.nl` is gekoppeld.
+Het eigen domein `robinvanderstar.nl` kan later aan Cloudflare Pages worden gekoppeld. `sitemap.xml` verwijst alvast naar `https://robinvanderstar.nl/` en klopt definitief zodra dat domein actief is.
