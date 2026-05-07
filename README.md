@@ -1,6 +1,6 @@
 # robinvanderstar-site
 
-Professionele persoonlijke profielsite van Robin van der Star. De site is bedoeld als moderne persoonlijke hub voor ervaring, projecten, skills, cases en contact.
+Persoonlijke professionele profielsite van Robin van der Star. De site is een moderne onepager voor profiel, ervaring, projecten, skills, cases, persoonlijke drive en contact, met daarnaast een compacte printbare cv-pagina.
 
 ## Techniek
 
@@ -25,9 +25,14 @@ Cloudflare Pages instellingen:
 
 Elke push naar `main` kan automatisch een nieuwe Cloudflare Pages-deploy triggeren.
 
+## Pagina's
+
+- `index.html`: onepage profielsite
+- `cv.html`: compacte printbare cv-pagina
+
 ## Indexering
 
-`noindex, nofollow` staat tijdelijk actief in `index.html`. Ook blokkeert `robots.txt` crawlers voorlopig met `Disallow: /`.
+`noindex, nofollow` staat tijdelijk actief in `index.html` en `cv.html`. Ook blokkeert `robots.txt` crawlers voorlopig met `Disallow: /`.
 
 Verwijder dit pas zodra `robinvanderstar.nl` definitief gekoppeld is en de site geindexeerd mag worden.
 
