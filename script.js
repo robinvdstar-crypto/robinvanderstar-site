@@ -2,6 +2,7 @@ const header = document.querySelector("[data-header]");
 const nav = document.querySelector("[data-nav]");
 const navToggle = document.querySelector("[data-nav-toggle]");
 const year = document.querySelector("[data-year]");
+const profileImage = document.querySelector("[data-profile-image]");
 
 function syncHeader() {
   header?.classList.toggle("is-scrolled", window.scrollY > 12);
@@ -25,3 +26,7 @@ syncHeader();
 if (year) {
   year.textContent = new Date().getFullYear();
 }
+
+profileImage?.addEventListener("error", () => {
+  profileImage.closest(".hero-photo-card")?.setAttribute("hidden", "");
+});
