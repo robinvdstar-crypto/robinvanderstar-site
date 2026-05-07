@@ -969,6 +969,18 @@ svg.contact-icon {
   font-weight: 800;
 }
 
+.cv-role-phases {
+  display: grid;
+  gap: 4px;
+  padding: 10px 12px;
+  border-left: 3px solid rgba(31, 122, 140, 0.35);
+  background: #f7fbfb;
+}
+
+.cv-role-phases p {
+  font-size: 0.9rem;
+}
+
 .cv-compact-grid,
 .cv-skill-grid,
 .cv-bottom-grid {
